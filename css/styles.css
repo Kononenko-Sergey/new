@@ -8,7 +8,7 @@ body {
 	font-family: 'Montserrat-light', arial;
 	color: #fff;
 }
-.block1{
+.page-bg-mountains{
 	width: 100%;
 	height: 1024px;
 	background: url(../images/slide-1.jpg);
@@ -41,10 +41,10 @@ a{
 a:hover{
 	color: #bfab94;
 }
-.block2{
+.page-content{
 	background: #fff;
 }
-.row div{
+.row .col-4{
 	width: 20%;
 	height: 100px;
 	background: #cccccc;
@@ -53,22 +53,23 @@ a:hover{
 	margin-top: 70px;
 	margin-bottom: 70px;
 }
-.block3{
+.page-img{
 	background: #fbfaf8;
 }
-.block3 img{
+.page-img img{
+	max-width: 100%;
 	margin-top: 70px;
 	vertical-align: bottom;
 }
-.block4 {
+.grey-centred {
 	width: 100%;
 	height: 100px;
 	background: #35261f;
 }
-.block5{
+.page-content{
 	background: #fbfaf8;
 }
-.row2 div{
+.row2 .col-3{
 	width: 28%;
 	height: 100px;
 	background: #cccccc;
@@ -77,15 +78,16 @@ a:hover{
 	margin-top: 70px;
 	margin-bottom: 70px;
 }
-.block6{
+.bg-office{
 	width: 100%;
 	height: 705px;
 	background: url(../images/video-bg.jpg)no-repeat;
 }
-.block7{
+.block-iPhone{
 	position: relative;
 }
-.block7 img{
+.block-iPhone img{
+	max-width: 100%;
 	margin-top: 70px;
 	vertical-align: bottom;
 }
@@ -97,20 +99,21 @@ a:hover{
     top: 18%;
     left: 43%;
 }
-.block8 {
+.grey-centred-big {
 	width: 100%;
 	height: 150px;
 	background: #35261f;
 }
-.block9 {
+.logos {
 	background: #555556;
 }
-.block9 img{
+.logos img{
+	max-width: 100%;
 	margin-top: 70px;
 	margin-left: 5%;
 	margin-bottom: 70px;
 }
-.block10 {
+footer {
 	width: 100%;
 	height: 450px;
 	background: #191919;
@@ -136,7 +139,7 @@ a:hover{
     top: 28%;
     right: 14%;
 }
-footer {
+.footer-copyright {
 	width: 100%;
 	background: #000;
 	color: #555555;
