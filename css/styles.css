@@ -333,6 +333,9 @@ footer .col4-pd-top-block-date{
 	font-size: 12px;
 	color: #343434;
 }
+/*.col4-pd-top-block1:nth-child(1){
+	color: blue;
+}*/
 .col4-pd-top-block2{
 	border-bottom: 1px solid #8c8c8c;
     padding-bottom: 20px;
@@ -370,31 +373,26 @@ footer .col4-pd-top-block-date{
 	padding: 40px 0px;
 	display: inline-block;
 }
-.wahom {
-	color: #959595;
-	padding-right: 10px;
+.block-left li{
+	display: inline-block;
 	border-right: 1px solid #555555;
+	padding:0px 10px;
 }
-.privacy {
-	padding: 0px 9px;
-}
-.faq {
-	color: #c7b299;
-	padding: 0px 10px;
-	border-left: 1px solid #555555;
-	border-right: 1px solid #555555;
-}
-.support {
-	padding-left: 10px;
+.block-left li:last-child{
+	border-right: 0px;
 }
 .block-right {
 	float: right;
 	padding: 40px 0px;
 }
-.onlyon {
-	padding: 0px 0px 0px 9px;
+.block-right li{
+	display: inline-block;
 }
-.envato {
+.footer-copyright-color-fff{
 	color: #959595;
+}
+.block-right li:nth-child(3) {
+	border-right: 1px solid 555555;
+	padding-left: 10px;
 }
 
