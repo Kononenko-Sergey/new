@@ -11,16 +11,23 @@ body {
 a{
 	color:#fff;
 	text-decoration: none;
+	cursor: pointer;
 }
-a:hover{
+a:hover, a:focus{
 	color: #bfab94;
+	cursor: pointer;
 }
+
+{
+	color: #bfab94;
+	cursor: pointer;
+}
+
 img {
 	max-width: 100%;
 }
 p{
 	color: #8c8c8c;
-	text-align: center;
 	font-size: 16px;
 }
 h2{
@@ -38,11 +45,30 @@ h4{
 	color: #cab79f;
 	margin-bottom: 0px;
 }
-button{
-	background: #998675;
+
+.button {
 	padding: 10px 20px;
-    color: #fff;
-    border: 0px;
+	background: #998675;
+	border:0px;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: 0 3px 0px rgba(115,99,87,1);
+}
+.button:hover {
+	background: #90755e;
+	color: #fff;
+}
+.button-small{
+	border-radius: 4px;
+	padding: 5px 15px;
+}
+.button-big{
+	border-radius: 8px;
+	padding: 10px 25px;
 }
 
 .fake-content{
@@ -50,9 +76,9 @@ button{
 	height: 100px;
 	display: block;
 }
-.icon-pencil, .icon-stack, .icon-cog, .icon-folder-open{
+.icon-pencil, .icon-laers, .icon-settings, .icon-bag{
 	text-align: center;
-    display: block;
+  display: block;
 	color: #000;
 	font-size: 70px;
 }
@@ -60,7 +86,7 @@ button{
 	color: #fff;
 	margin-top: 100px;
 	text-align: center;
-    display: inline-block;
+  display: inline-block;
 }
 .icon-youtube{
 	color: #fff;
@@ -76,7 +102,7 @@ button{
 }
 .page-bg-mountains{
 	width: 100%;
-	height: 100vh;
+  height: 100vh;
 	background: url(../images/slide-1.jpg)no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -84,31 +110,46 @@ button{
 .middle-container {
 	margin: 0px auto;
   width: 100%;
-  max-width: 1129px;
+  max-width: 1200px;
 }
 .indent-content {
 	padding: 0px 10px;
 }
 
 .logo{
-	width: 20%;
+	width: 30%;
 	display: block;
 	float: left;
+	text-align: left;
 	padding-top: 40px;
 }
+.logo img {
+	max-width: 100%;
+}
+
 button.accordion{
 	display: none;
 }
 .menu {
-	width: 55%;
+	width: 70%;
 	float: right;
 	display: block;
-	margin-top: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 20px;
+	margin-top: 50px;
+}
+.menu a {
+	padding: 10px 15px;
+}
+.menu a.active {
+	border-bottom: 2px solid #bfab94;
+	color: #fff;
 }
 .menu li{
 	display: inline-block;
-	margin-left: 10px;
-  padding-top: 20px;
 }
 .slider{
 	width: 43%;
@@ -122,45 +163,43 @@ button.accordion{
 }
 
 
-.row{
+.row {
 	display: table;
 	width: 100%;
 }
+
 .col-4{
 	float: left;
 	width: 25%;
-	padding: 0px 10px;
-	box-sizing: border-box;
-	min-height: 30px;
-}
-.row p{
-	font-size: 14px;
-}
-.col-3{
-	float: left;
-	width: 33.33%;
-	padding: 0px 10px;
+	padding: 0px 15px;
 	box-sizing: border-box;
 	min-height: 30px;
 }
 .col-2{
 	float: left;
 	width: 50%;
-	padding: 0px 10px;
+	padding: 0 15px;
 	box-sizing: border-box;
 	min-height: 30px;
 }
-.col-6{
+.col-3{
 	float: left;
 	width: 33.33%;
-	padding: 10px 10px;
+	padding: 0 15px;
 	box-sizing: border-box;
 	min-height: 30px;
 }
 .col-5{
 	float: left;
 	width: 20%;
-	padding: 20px 10px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	min-height: 30px;
+}
+.col-6{
+	float: left;
+	width: 33.33%;
+	padding: 0 10px;
 	box-sizing: border-box;
 	min-height: 30px;
 }
@@ -197,6 +236,7 @@ button.accordion{
 }
 .gradient-bg-left p{
 	margin: 0px;
+	padding: 0px;
 }
 .gradient-bg-left{
 	width: 27%;
@@ -213,43 +253,78 @@ button.accordion{
 .gradient-bg-big{
 	width: 100%;
 	height: 200px;
-	background: #35261f;
+	background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
 }
+
 .button-menu{
 	text-align: center;
-    margin: 50px;
+  margin: 50px;
 }
 .button-menu button{
 	margin-left: 10px;
 	background: #fff;
-	color: #8c8c8c;
 	border: 1px solid #8c8c8c;
+}
+.button-menu a{
+	color: #8c8c8c;
 }
 .button-menu button:hover{
 	background: #998675;
 	color: #000; /*не работатет*/
 }
-.col-img{
-	background: #fbfaf8;
+
+.post {
+	position: relative;
+	margin-bottom: 30px;
+	background-color: #fbfaf8;
 }
-.col-img:hover{
+.post:hover{
 	background: #998675;
 }
-.icon-col2{
-	width: 100%;
-	height: 225px;
-	background: url(../images/icon-col2.jpg)no-repeat;
-}	
-.col-img p{
-	margin: 0px;
-	padding-bottom: 50px;
-    text-align: left;
+.post:hover p, .post:hover h4{
+	color: #fff;
 }
-.col-img h4,p{
+.post .icon-link, .post .icon-search {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+}
+.post .icon-link {
+	margin-left: -40px;
+}
+.post .icon-search {
+	margin-left: 10px;
+}
+.post:hover .icon-link, .post:hover .icon-search {
+	display: inline-block;
+}
+
+
+.post p{
+	font-size: 14px;
+}
+.post h4{
 	padding-left: 25px;
 }
-.row button{
-	margin: 0px auto;
+
+.post-image {
+	position: relative;
+}
+.post-image:after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; bottom: 5px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-bottom: 10px solid #fff; /* Добавляем треугольник */
+   }
+
+.post-text {
+	padding: 10px 20px 30px  30px;
 }
 
 .bg-office{
@@ -263,6 +338,11 @@ button.accordion{
 	padding-top: 300px;
 	margin: 0px auto;
 }
+.icon-video{
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
 .iPhone {
 	width: 40%;
 	text-align: right;
@@ -272,6 +352,7 @@ button.accordion{
 }
 .iPhone img {
 	vertical-align: bottom;
+	display: block;
 }
 .iPhone-sidebar{
 	width: 60%;
@@ -307,9 +388,24 @@ button.accordion{
 	margin: 0px;
 	padding: 0px;
 	color: #c7b299;
+	text-align: center;
+}
+.icon-people, .icon-tea, .icon-chat, .icon-heart, .icon-food{
+	display: block;
+  text-align: center;
+  font-size: 50px;
+  color: #c7b299;
 }
 .dark-bg{
 	background: url(../images/bg-col4.jpg);
+}
+.arrow{
+	width: 50px;
+  margin: 0px auto;
+}
+.icon-arrow-left, .icon-arrow-right{
+  color: #8c8c8c;
+  font-size: 20px;
 }
 
 
@@ -348,7 +444,7 @@ footer .col4-pd-top-block-date{
 	border-top: 1px solid #8c8c8c;
     padding-top: 20px;
 }
-.col4-pd-top-block4{
+.color-gold{
 	color: #c7b299;
 }
 .info {
@@ -363,6 +459,12 @@ footer .col4-pd-top-block-date{
   margin-right: 5%;
   margin-bottom: 5%;
 }
+.color-blue{
+	color: #00bff3;
+}
+.color-white{
+	color: #fff;
+}
 .footer-copyright {
 	width: 100%;
 	background: #000;
@@ -373,10 +475,16 @@ footer .col4-pd-top-block-date{
 	padding: 40px 0px;
 	display: inline-block;
 }
+.block-left a{
+	color: #555555;
+}
 .block-left li{
 	display: inline-block;
 	border-right: 1px solid #555555;
 	padding:0px 10px;
+}
+.block-left li a:nth-child(2) {
+	color: #c7b299;
 }
 .block-left li:last-child{
 	border-right: 0px;
@@ -396,3 +504,13 @@ footer .col4-pd-top-block-date{
 	padding-left: 10px;
 }
 
+
+div.inner {
+	background: blue;
+	height: 100px;
+}
+
+.outer .inner {
+	background: red;
+	height: 100px;
+}
